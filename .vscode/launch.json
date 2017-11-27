@@ -11,6 +11,8 @@
             "name": "nw .",
          //   "runtimeExecutable": "Z:\\tmp\\node891portable\\node.exe",
            "runtimeExecutable": "${workspaceFolder}\\..\\nw.exe",
+           "console": "internalConsole",
+           "timeout": 30000,
            "runtimeArgs": "."
             //            "program": "${workspaceFolder}"
         }
