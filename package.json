@@ -1,8 +1,9 @@
 {
   "name": "nwjs-demo",
-  "main": "index.html",
+//  "main": "index.html",
+  "main": "Line-based positioning.html",
   "window": {
-    "height": 600,
+    "height": 800,
     "width":1000,
     "toolbar": true
   },
