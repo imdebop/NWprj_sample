@@ -3,8 +3,8 @@
 //  "main": "index.html",
   "main": "Line-based positioning.html",
   "window": {
-    "height": 800,
-    "width":1000,
+    "height": 900,
+    "width":1200,
     "toolbar": true
   },
   "scripts": {
