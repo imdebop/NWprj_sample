@@ -13,9 +13,18 @@
   <link rel="stylesheet" href="./Line-based positioning_files/skeleton.css">
 
   <link rel="stylesheet" href="./Line-based positioning_files/common2.css">
-
+  <link rel="stylesheet" href="./Line-based positioning_files/radio.css">
+  
   <style>
-
+   input[ type=radio ] { display: none; }
+   .label { width: 50px;
+            margin: 5px;
+            border: 1px solid #006DD9;
+            white-space: nowrap;
+          }
+   .menuContainer {
+    white-space: nowrap;
+    }
 
 
   .wrapper {
@@ -26,21 +35,6 @@
     grid-row-gap: 10px;
   }
 
-  .mainheader {
-    grid-row: 1 / 2;
-  }
-
-  .content {
-    grid-row: 2 / 3;
-  }
-
-  .panel {
-    grid-row: 3 / 4;
-  }
-
-  .mainfooter {
-    grid-row: 4 / 5;
-  }
 
   @media (min-width: 550px) {
 
@@ -54,20 +48,24 @@
       grid-column: 1 / 4;
       grid-row: 1 / 2;
     }
+    .menunheader {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
 
     .panel {
       grid-column: 1 / 2;
-      grid-row: 2 / 3;
+      grid-row: 3 / 4;
     }
 
     .content {
       grid-column: 2 / 3;
-      grid-row: 2 / 3;
+      grid-row: 3 / 4;
     }
 
     .mainfooter {
       grid-column: 1 / 4;
-      grid-row: 3 / 4;
+      grid-row: 4 / 5;
     }
 }
 
@@ -79,9 +77,9 @@
   <div class="wrapper">
 
     <header class="mainheader">
-      <style> .no-wrap { white-space: nowrap; } </style>
       <h3><font size="5">柳生川南部土地区画整理 </font>　　　　　業務システム</h3>
-      <span>***</span>
+
+        <span>***</span>
       <a class="button" href="#"><h5>権利者情報</h5></a>
       <span>***</span>
       <a class="button" href="#"><h5>換地情報</h5></a>
@@ -90,9 +88,21 @@
       <span>***</span>
       <a class="button" href="#"><h5>図面関連</h5></a>
       <span>***</span>
+
     </header>
 
-
+    <div class="sample menuHeader">
+        <input name="s3" id="select1" value="1" checked="" type="radio">
+        <label for="select1">みかん</label>
+        <input name="s3" id="select2" value="2" type="radio">
+        <label for="select2">梅</label>
+        <input name="s3" id="select3" value="3" type="radio">
+        <label for="select3">ラーメン</label>
+        <input name="s3" id="select4" value="4" type="radio">
+        <label for="select4">パンダ</label>
+        <input name="s3" id="select5" value="5" type="radio">
+        <label for="select5">高野山</label>
+    </div>
 
     <div class="panel">
         <h5>作業メニュー</h5>

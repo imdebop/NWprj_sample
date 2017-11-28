@@ -1,0 +1,22 @@
+          <style>
+          .no-wrap { white-space: nowrap; } 
+          </style>
+
+  .mainheader {
+    grid-row: 1 / 2;
+  }
+  .menuheader {
+    grid-row: 2 / 3;
+  }
+  .content {
+    grid-row: 3 / 4;
+  }
+
+  .panel {
+    grid-row: 4 / 5;
+  }
+
+  .mainfooter {
+    grid-row: 5 / 6;
+  }
+
