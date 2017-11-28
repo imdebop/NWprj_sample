@@ -8,13 +8,13 @@
 	width: 15%;
 	margin: 0;
 	padding: 12px 5px;
-	border-right: 1px solid #abb2b7;
+	border-right: 3px solid #000000;
 	background: #bdc3c7;
 	color: #555e64;
-	font-size: 14px;
+	font-size: 20px;
 	text-align: center;
 	line-height: 1;
-	transition: .2s;
+	transition: .1s;
 }
 .sample label:first-of-type{
 	border-radius: 3px 0 0 3px;
