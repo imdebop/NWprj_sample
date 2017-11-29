@@ -14,7 +14,7 @@
 	font-size: 20px;
 	text-align: center;
 	line-height: 1;
-	transition: .1s;
+	transition: .5s;
 }
 .sample label:first-of-type{
 	border-radius: 3px 0 0 3px;

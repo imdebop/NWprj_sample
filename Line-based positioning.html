@@ -6,15 +6,15 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./Line-based positioning_files/css" rel="stylesheet" type="text/css">
+  <link href="./css/general.css" rel="stylesheet" type="text/css">
 
   <!-- CSS - using the Skeleton framework for typography -->
-  <link rel="stylesheet" href="./Line-based positioning_files/normalize.css">
-  <link rel="stylesheet" href="./Line-based positioning_files/skeleton.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
 
-  <link rel="stylesheet" href="./Line-based positioning_files/common2.css">
-  <link rel="stylesheet" href="./Line-based positioning_files/radio.css">
-  <script type="text/javascript" src="./scripts/test.js">
+  <link rel="stylesheet" href="./css/common2.css">
+  <link rel="stylesheet" href="./css/radio.css">
+  <script type="text/javascript" src="./scripts/jquery-3.2.1.min.js">
   </script>
   <style>
    input[ type=radio ] { display: none; }
@@ -81,21 +81,21 @@
       <h3><font size="5">柳生川南部土地区画整理 </font>　　　　　業務システム</h3>
     </header>
       <div class="sample menuHeader">
-        <input name="s3" id="select1" value="1" checked="" type="radio">
-        <label for="select1">権利者情報</label>
-        <input name="s3" id="select2" value="2" type="radio">
-        <label for="select2">換地情報</label>
-        <input name="s3" id="select3" value="3" type="radio">
-        <label for="select3">保留地情報</label>
-        <input name="s3" id="select4" value="4" type="radio">
-        <label for="select4">図面関連</label>
-        <input name="s3" id="select5" value="5" type="radio">
-        <label for="select5">管理</label>
+        <input name="s3" id="memuKenri" value="1" checked="" type="radio">
+        <label for="memuKenri">権利者情報</label>
+        <input name="s3" id="menuKanchi" value="2" type="radio">
+        <label for="menuKanchi">換地情報</label>
+        <input name="s3" id="menuHoryu" value="3" type="radio">
+        <label for="menuHoryu">保留地情報</label>
+        <input name="s3" id="menuZumen" value="4" type="radio">
+        <label for="menuZumen">図面関連</label>
+        <input name="s3" id="menuKanri" value="5" type="radio">
+        <label for="menuKanri">管理</label>
       </div>
 
 
 
-    <div class="panel">
+    <div class="panel" id="opPanel">
         <h5>作業メニュー</h5>
         <ul>
           <li><a class="button" href="#"><h5>権利者情報</h5></a></li>
@@ -111,7 +111,6 @@
     </div>
 
     <div class="content">
-        <h3>位置図</h3>
         <img border="1" src="images/ichizu.jpg" width="100%" height="90%" alt="area-map" title="area-map">
 
 
@@ -122,6 +121,7 @@
     </footer>
   </div>
 
+  <script src="./scripts/init.js"></script>
 
 
 </body></html>
