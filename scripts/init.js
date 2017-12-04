@@ -16,7 +16,8 @@ $(function() {
     });
 
     var kana_sub = function(s_text){
-
+        $('#content').load('./sho_kumi?owner=' + s_text);
+        
         console.log(s_text);
     }
 
