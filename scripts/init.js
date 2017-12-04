@@ -6,7 +6,7 @@ $(function() {
             $('#content').load("./sho_kana?kana=" + s_text,
                 function() {
                     $('#sho_list').on('click','.shoyusha', function ($this){
-                        s_text = $this.target.textContent
+                        s_text = $this.target.attributes.sho_code.value
                         kana_sub(s_text);
                         //$('#content').load("./sho_kana?kana=" + s_text);
                     });
@@ -15,8 +15,9 @@ $(function() {
         });
     });
 
-    var kana_sub = function(obj){
-        console.log(obj);
+    var kana_sub = function(s_text){
+
+        console.log(s_text);
     }
 
 });
