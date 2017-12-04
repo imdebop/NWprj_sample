@@ -1,4 +1,8 @@
 
 $(function() {
-    $('#opPanel').load('./forms/kenri.html');
+    $('#opPanel').load('./panel_sho');
+});
+
+$(function() {
+    $('#content').load('./content_top');
 });
