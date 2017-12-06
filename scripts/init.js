@@ -6,12 +6,19 @@ $(function() {
             $('#content').load("./sho_kana?kana=" + s_text,
                 function() {
                     $('#sho_list').on('click','.shoyusha', function ($this){
-                        s_text = $this.target.attributes.sho_code.value
+                        s_text = $this.target.attributes.sho_code.value;
                         kana_sub(s_text);
                         //$('#content').load("./sho_kana?kana=" + s_text);
                     });
             
             });
+        });
+        $('#content').on('click','.tbl',               function($this){
+                var s_text = $this.target.innerText;
+                var sho_code = s_text.split(" : ")[1];
+                console.log(sho_code);
+            $('#content').load('./sho_kumi?owner=' + sho_code);
+            //console.log("kensaku_name_clicked");
         });
     });
 
