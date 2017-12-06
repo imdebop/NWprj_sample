@@ -1,6 +1,21 @@
 
 $(function() {
+    
     $('#opPanel').load('./panel_sho',function(){
+        $('#opPanel').on('submit','.kensaku',function(event) {
+            // HTMLでの送信をキャンセル
+            event.preventDefault();
+            //var s_text = $this.target;
+            element = document.getElementById('.input_kanji');
+            s_kanji = event.target.elements[0].value;
+            $('#content').load("./sho_kanji?s_kanji=" + s_kanji);
+            
+            //console.log();
+         
+            // …
+        });
+    
+
         $('#kana_kensaku').on('click','.kana',
             function ($this){ s_text = $this.target.textContent
             $('#content').load("./sho_kana?kana=" + s_text,
@@ -8,7 +23,6 @@ $(function() {
                     $('#sho_list').on('click','.shoyusha', function ($this){
                         s_text = $this.target.attributes.sho_code.value;
                         kana_sub(s_text);
-                        //$('#content').load("./sho_kana?kana=" + s_text);
                     });
             
             });
