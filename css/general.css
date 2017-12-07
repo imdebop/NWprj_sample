@@ -8,3 +8,10 @@ input#btn_kensaku {
 	width: 33%;
 	text-align : center;
 }
+
+.tbl_nayose {
+	border-width: thin;
+	border-style: solid;
+	width: 50%;
+	text-align : center;
+}
