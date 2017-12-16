@@ -42,11 +42,24 @@ $(function() {
         console.log(s_text);
     }
 
+    
 });
 
 $(function() {
     $('#content').load('./content_top');
 });
+
+$(function(){
+    $('#menuKanchi').on('click',function(e){
+        $('#opPanel').load('panel_kanchi');
+    });
+});
+
+
+//$(function(){
+//
+//});
+
 
 
 //$(function(){
